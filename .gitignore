@@ -1,0 +1,74 @@
+# ===========================================
+# x-infra-kit Pulumi - Git Ignore
+# ===========================================
+
+# ----- Dependencies -----
+node_modules/
+package-lock.json
+
+# ----- Build Output -----
+dist/
+bin/
+*.js
+*.js.map
+*.d.ts
+!jest.config.js
+!.eslintrc.js
+
+# ----- Pulumi -----
+# State and lock files (CRITICAL - contains secrets!)
+.pulumi/
+*.lock.hcl
+
+# Stack configs (contain project-specific settings and secrets)
+Pulumi.*.yaml
+!Pulumi.yaml
+
+# ----- IDE -----
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-*
+
+# ----- OS -----
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.lnk
+
+# ----- Test -----
+coverage/
+.nyc_output/
+
+# ----- Logs -----
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ----- Environment & Secrets (CRITICAL!) -----
+.env
+.env.*
+!.env.example
+
+# GCP credentials (NEVER commit!)
+*.json
+!package.json
+!tsconfig.json
+!examples/*/package.json
+!examples/*/tsconfig.json
+
+# ----- Example Project Build -----
+examples/*/bin/
+examples/*/.pulumi/
+examples/*/Pulumi.*.yaml
+!examples/*/Pulumi.yaml
+examples/*/node_modules/
+
+# ----- Temporary Files -----
+*.tmp
+*.temp
+*.bak
+*.cache
+.cache/

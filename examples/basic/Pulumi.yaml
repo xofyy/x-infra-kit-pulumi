@@ -1,0 +1,3 @@
+name: basic-example
+runtime: nodejs
+description: Basic example using x-infra-kit for GCP infrastructure
