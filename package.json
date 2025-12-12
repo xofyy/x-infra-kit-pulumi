@@ -1,6 +1,6 @@
 {
   "name": "@xofyy/x-infra-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reusable Pulumi Infrastructure Components for Google Cloud Platform",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
